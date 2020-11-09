@@ -16,10 +16,12 @@
         @endif
 
         <div class="content">
+            <img src="/img/pizza-house.png" alt="pizza house logo">
             <div class="title m-b-md">
-                Pizza House<br />
                 The North's Best Pizzas
             </div>
+            <p class="msg">{{session('msg')}}</p>
+            <a href="{{route('pizzas.create')}}">Order a Pizza</a>
         </div>
     </div>
 @endsection
